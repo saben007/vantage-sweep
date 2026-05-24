@@ -1,0 +1,78 @@
+{
+  "last_updated": "2026-05-24",
+  "sources": [
+    {
+      "id": "uk_companies_house",
+      "name": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/",
+      "category": "national_registry",
+      "signal_types": ["incorporations", "director_changes", "filings", "dissolutions"],
+      "access_method": "public_api",
+      "update_frequency": "real-time",
+      "automation_readiness": "high",
+      "priority": "must-have",
+      "notes": "Free REST + Streaming API."
+    },
+    {
+      "id": "us_sec_edgar",
+      "name": "US SEC EDGAR",
+      "url": "https://www.sec.gov/edgar",
+      "category": "filings_database",
+      "signal_types": ["form_d", "8-k", "ownership_changes"],
+      "access_method": "public_rss",
+      "update_frequency": "real-time",
+      "automation_readiness": "high",
+      "priority": "must-have",
+      "notes": "Form D = announced private funding."
+    },
+    {
+      "id": "opencorporates",
+      "name": "OpenCorporates",
+      "url": "https://opencorporates.com/",
+      "category": "global_registry_aggregator",
+      "signal_types": ["entity_formation", "officers", "filings", "dissolutions"],
+      "access_method": "public_search_api",
+      "update_frequency": "daily",
+      "automation_readiness": "high",
+      "priority": "must-have",
+      "notes": "140+ jurisdictions."
+    },
+    {
+      "id": "techcrunch_rss",
+      "name": "TechCrunch RSS",
+      "url": "https://techcrunch.com/feed/",
+      "category": "press_news",
+      "signal_types": ["funding_rounds", "acquisitions", "launches"],
+      "access_method": "rss",
+      "update_frequency": "real-time",
+      "automation_readiness": "high",
+      "priority": "must-have",
+      "notes": "Primary funding announcements."
+    },
+    {
+      "id": "github_public",
+      "name": "GitHub Public API",
+      "url": "https://api.github.com",
+      "category": "developer_activity",
+      "signal_types": ["new_repos", "commit_spikes", "stars"],
+      "access_method": "public_api",
+      "update_frequency": "real-time",
+      "automation_readiness": "high",
+      "priority": "must-have",
+      "notes": "Technical traction signals."
+    },
+    {
+      "id": "yc_directory",
+      "name": "Y Combinator Startup Directory",
+      "url": "https://www.ycombinator.com/companies",
+      "category": "accelerator",
+      "signal_types": ["new_batches", "early_stage_companies"],
+      "access_method": "public_page",
+      "update_frequency": "batch",
+      "automation_readiness": "medium",
+      "priority": "must-have",
+      "notes": "Best early-stage signal."
+    }
+  ]
+}
+
